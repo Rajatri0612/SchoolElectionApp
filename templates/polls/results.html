@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <!-- Thank You Message -->
+    <div class="card text-center mt-5">
+        <div class="card-body">
+            <h1 class="card-title mb-4">Thank You for Voting!</h1>
+            <p class="card-text">Your vote has been recorded successfully.</p>
+            <p class="card-text">We appreciate your participation in the election.</p>
+        </div>
+    </div>
+
+    <!-- Proceed Further Button -->
+    <div class="text-center mt-4">
+        <a class="btn btn-secondary btn-lg" href="{% url 'polls:index' %}">Proceed Further</a>
+    </div>
+</div>
+{% endblock %}

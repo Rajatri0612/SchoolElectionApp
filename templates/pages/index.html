@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="text-white text-center py-5" style="background-color: #4CAF50;">
+    <div class="container">
+        <h1 class="display-4">STUDENT COUNCIL ELECTION</h1>
+        <p class="lead">Your voice matters. Choose wisely and make a difference!</p>
+        <a class="btn btn-warning btn-lg" href="{% url 'polls:index' %}">
+            View Active Elections
+        </a>
+    </div>
+</div>
+
+<!-- Additional Content (Optional) -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <h2>Inform</h2>
+            <p>Every vote is counted and verified to ensure a fair election.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <h2>Form</h2>
+            <p>Your vote is confidential and securely stored.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <h2>Transform</h2>
+            <p>Vote from anywhere, anytime using your school device.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

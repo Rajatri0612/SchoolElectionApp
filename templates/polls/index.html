@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1 class="text-center mb-4">Options for Voting</h1>
+
+    {% if latest_question_list %}
+        <div class="row">
+            {% for question in latest_question_list %}
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ question.question_text }}</h5>
+                            <a href="{% url 'polls:detail' question.id %}" class="btn btn-primary">
+                                Vote Now!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="alert alert-info text-center" role="alert">
+            No polls available at the moment. Check back later!
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
