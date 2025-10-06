@@ -121,3 +121,4 @@ The **`vote`** function handles the most sensitive operation: vote processing.
 | **Vote Double-Counting** | Voter using browser history or multiple tabs. | The redirect in the `vote` view mitigates this, but true prevention requires session-based voter authentication to track if a specific user has already cast a vote for the question. |
 
 | **Static Assets Missing** | Filesystem paths or URLs are misconfigured for production. | 1. Run `python manage.py collectstatic`. 2. Ensure your production web server (Nginx/Apache) is configured to serve `STATIC_ROOT` and `MEDIA_ROOT` files directly, bypassing Django. |
+
