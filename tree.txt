@@ -1,6 +1,3 @@
-Folder PATH listing
-Volume serial number is D6EF-266C
-C:.
 |   db.sqlite3
 |   manage.py
 |   README.md
@@ -61,3 +58,4 @@ C:.
         wsgi.py
         __init__.py
         
+
