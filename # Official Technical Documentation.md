@@ -1,8 +1,8 @@
 # Official Technical Documentation: Local E-Voting System (Django)
 
 **Document Version:** 1.0
-**Project Name:** Local E-Voting System
-**Technology Stack:** Django 5.1.1, Python 3.x, SQLite3
+**Project Name:** ProjectZephyr
+**Technology Stack:** Django 5.1.1, Python 3.10, SQLite3
 **Purpose:** To provide a secure, self-contained electronic voting platform for local, controlled elections.
 
 ---
@@ -119,4 +119,5 @@ The **`vote`** function handles the most sensitive operation: vote processing.
 | :--- | :--- | :--- |
 | **403 Forbidden Error** | Missing `{% csrf_token %}` in a form, or `ALLOWED_HOSTS` issue when `DEBUG=False`. | 1. Ensure `{% csrf_token %}` is the first tag inside all `<form method="POST">` tags. 2. Verify the host IP is listed in `settings.ALLOWED_HOSTS`. |
 | **Vote Double-Counting** | Voter using browser history or multiple tabs. | The redirect in the `vote` view mitigates this, but true prevention requires session-based voter authentication to track if a specific user has already cast a vote for the question. |
+
 | **Static Assets Missing** | Filesystem paths or URLs are misconfigured for production. | 1. Run `python manage.py collectstatic`. 2. Ensure your production web server (Nginx/Apache) is configured to serve `STATIC_ROOT` and `MEDIA_ROOT` files directly, bypassing Django. |
