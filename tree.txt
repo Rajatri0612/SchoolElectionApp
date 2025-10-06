@@ -1,0 +1,63 @@
+Folder PATH listing
+Volume serial number is D6EF-266C
+C:.
+|   db.sqlite3
+|   manage.py
+|   README.md
+|   requirements.txt
+|   tree.txt
+|   
++---landingPage
+|   |   admin.py
+|   |   apps.py
+|   |   models.py
+|   |   tests.py
+|   |   urls.py
+|   |   views.py
+|   |   __init__.py
+|   |   
+|   \---migrations
+|           __init__.py
+|           
++---media
+|   \---candidate_images
+|           st-francis-school-indirapuram-ghaziabad-english-medium-schools-wkkzawfn2v.png
+|           
++---static
+|       Logo.png
+|       
++---templates
+|   |   base.html
+|   |   
+|   +---pages
+|   |       index.html
+|   |       
+|   +---partials
+|   |       _navbar.html
+|   |       
+|   \---polls
+|           detail.html
+|           index.html
+|           results.html
+|           
++---voteApp
+|   |   admin.py
+|   |   apps.py
+|   |   models.py
+|   |   tests.py
+|   |   urls.py
+|   |   views.py
+|   |   __init__.py
+|   |   
+|   \---migrations
+|           0001_initial.py
+|           0002_choice_image.py
+|           __init__.py
+|           
+\---votingapp
+        asgi.py
+        settings.py
+        urls.py
+        wsgi.py
+        __init__.py
+        
